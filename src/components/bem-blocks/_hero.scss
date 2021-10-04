@@ -1,0 +1,108 @@
+.hero {
+  position: relative;
+  padding-top: 285px;
+  padding-bottom: 60px;
+  min-height: 100vh;
+  background-image: url('../../img/hero/hero-bg.webp');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  // .hero__title
+
+  &__title {
+    max-width: 740px;
+    margin-bottom: 56px;
+  }
+
+  // .hero__descr
+
+  &__descr {
+    margin-bottom: 63px;
+    max-width: 360px;
+    font-size: 24px;
+    line-height: 158%;
+  }
+
+  // .hero__btn-order
+
+  &__btn-order {
+    margin-bottom: 195px;
+  }
+
+  // .hero__social
+
+  &__social {
+  }
+}
+
+
+
+.social {
+  display: flex;
+  align-items: center;
+
+  // .social__link
+
+  &__link {
+    display: block;
+    width: 25px;
+    height: 25px;
+    transform-origin: center center;
+    background-repeat: no-repeat;
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  // .social__link--fb
+
+  &__link--fb {
+  }
+
+  // .social__link--insta
+
+  &__link--insta {
+  }
+
+  // .social__link--tm
+
+  &__link--tm {
+    width: 22px;
+    height: 22px;
+  }
+
+  // .social__link--viber
+
+  &__link--viber {
+  }
+}
+.--svg {
+
+  // .--svg__fb
+
+  &__fb {
+  }
+
+  // .--svg__insta
+
+  &__insta {
+  }
+
+  // .--svg__tg
+
+  &__tg {
+  }
+
+  // .--svg__viber
+
+  &__viber {
+  }
+}
+.scroll {
+
+  // .scroll__link
+
+  &__link {
+  }
+}
