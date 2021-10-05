@@ -29,18 +29,13 @@
   &__btn-order {
     margin-bottom: 195px;
   }
-
-  // .hero__social
-
-  &__social {
-  }
 }
 
 
 
 .social {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 
   // .social__link
 
@@ -50,19 +45,11 @@
     height: 25px;
     transform-origin: center center;
     background-repeat: no-repeat;
+    @include btn_anim(1.2, 0.95);
+
     &:not(:last-child) {
       margin-right: 25px;
     }
-  }
-
-  // .social__link--fb
-
-  &__link--fb {
-  }
-
-  // .social__link--insta
-
-  &__link--insta {
   }
 
   // .social__link--tm
@@ -71,38 +58,44 @@
     width: 22px;
     height: 22px;
   }
-
-  // .social__link--viber
-
-  &__link--viber {
-  }
 }
-.--svg {
 
-  // .--svg__fb
-
-  &__fb {
-  }
-
-  // .--svg__insta
-
-  &__insta {
-  }
-
-  // .--svg__tg
-
-  &__tg {
-  }
-
-  // .--svg__viber
-
-  &__viber {
-  }
-}
 .scroll {
-
   // .scroll__link
 
   &__link {
+    position: absolute;
+    display: block;
+    bottom: 57px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 98px;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    &::after {
+      content: '';
+      position: absolute;
+      // left: 50%;
+      // transform: translateX(-50%);
+      bottom: 75px;
+      width: 1px;
+      height: 22.72px;
+      background-color: var(--color-black);
+      animation-name: line;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+    }
+  }
+}
+
+@keyframes line {
+  0% {
+    bottom: 75px;
+  }
+
+  100% {
+    bottom: 0;
   }
 }
