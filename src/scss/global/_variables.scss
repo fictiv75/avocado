@@ -5,4 +5,8 @@
   --color-bg:#eefcff;
   --color-black:#000000;
   --color-white:#ffffff;
+  --title-size:calc(28px + (60 - 28) * (100vw - 375px) / (1920 - 375));;
+  --tel-size:calc(20px + (24 - 20) * (100vw - 375px) / (1920 - 375));;
 }
+
+// padding-top: calc(50px + (98 - 50) * (100vw - 375px) / (1920 - 375));

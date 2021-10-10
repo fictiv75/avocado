@@ -55,6 +55,10 @@ body {
 	font-weight: 400;
 }
 
+.lock {
+	overflow: hidden;
+}
+
 ul,
 ol,
 li,
@@ -124,7 +128,7 @@ img {
 
 .title {
 	font-weight: 500;
-	font-size: 60px;
+	font-size: var(--title-size);
 	line-height: 153%;
 	color: var(--color-green);
 }
